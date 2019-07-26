@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92114E40-0297-4C57-AD35-F4144A938A11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentaciones</RootNamespace>
+    <AssemblyName>Presentaciones</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.5.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.6.1\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportes.Designer.cs">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPagarMensualidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPagarMensualidad.Designer.cs">
+      <DependentUpon>FormPagarMensualidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientes.Designer.cs">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogo.Designer.cs">
+      <DependentUpon>FormLogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlanes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlanes.Designer.cs">
+      <DependentUpon>FormPlanes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductos.Designer.cs">
+      <DependentUpon>FormProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductosComprados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductosComprados.Designer.cs">
+      <DependentUpon>FormProductosComprados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistraryActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistraryActualizarCliente.Designer.cs">
+      <DependentUpon>FormRegistraryActualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistraryActualizarPlanes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistraryActualizarPlanes.Designer.cs">
+      <DependentUpon>FormRegistraryActualizarPlanes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistraryActualizarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistraryActualizarProducto.Designer.cs">
+      <DependentUpon>FormRegistraryActualizarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistraryActualizarRutina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistraryActualizarRutina.Designer.cs">
+      <DependentUpon>FormRegistraryActualizarRutina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRutinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRutinas.Designer.cs">
+      <DependentUpon>FormRutinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVentas.Designer.cs">
+      <DependentUpon>FormVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVerDetallesFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVerDetallesFactura.Designer.cs">
+      <DependentUpon>FormVerDetallesFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormClientes.resx">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportes.resx">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogo.resx">
+      <DependentUpon>FormLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPagarMensualidad.resx">
+      <DependentUpon>FormPagarMensualidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlanes.resx">
+      <DependentUpon>FormPlanes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductos.resx">
+      <DependentUpon>FormProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductosComprados.resx">
+      <DependentUpon>FormProductosComprados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistraryActualizarCliente.resx">
+      <DependentUpon>FormRegistraryActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistraryActualizarPlanes.resx">
+      <DependentUpon>FormRegistraryActualizarPlanes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistraryActualizarProducto.resx">
+      <DependentUpon>FormRegistraryActualizarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistraryActualizarRutina.resx">
+      <DependentUpon>FormRegistraryActualizarRutina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRutinas.resx">
+      <DependentUpon>FormRutinas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVentas.resx">
+      <DependentUpon>FormVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{81aa082d-f472-4437-b87b-0ef9255363f2}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{9e7b7fc1-f079-4873-909a-324a94cf804a}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
